@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <!-- normalize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+        <!-- app stylesheet -->
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <header>
+                <h1>Jimmy's Diner</h1>
+                <p class="strapline">The best burgers and pizzas in town.</p>
+            </header>
+
+            <main>
+                <section class="menu-section">
+                    <h2 class="offer-text">Offer of the day - Friends Eat Cheap!</h2>
+                    <h3 class="offer-details-text">Buy one pizza get another at 10% discount!</h3>
+                    <article id="menu">
+                        <!-- menu renders here -->
+                    </article>
+                </section>
+                <section class="order-section">
+                    <article id="order" class="order hidden">
+                        <!-- order renders here -->
+                    </article>
+                </section>
+                <section id="payment-section" class="payment-section hidden">
+                    <h2 class="form-h2">Enter card details</h2>
+                    <form id="payment-form" class="payment-form">
+                        
+                        
+                            <input 
+                                type="text" 
+                                name="name" 
+                                id="name" 
+                                placeholder="Enter your name" 
+                                aria-label="Enter your name"
+                                required>
+                            <input
+                                type="number"
+                                name="card-number"
+                                id="card-number"
+                                placeholder="Enter card number"
+                                aria-label="Enter card number"
+                                required
+                            >
+                            <input 
+                                type="number" 
+                                name="cvv" 
+                                id="cvv" 
+                                placeholder="Enter CVV" 
+                                aria-label="Enter CVV"
+                                required>
+                        
+                        <button type="submit" class="form-submit-btn">Pay</button>
+
+                    </form>
+
+                </section>
+                
+            </main>
+        </div>    
+    
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

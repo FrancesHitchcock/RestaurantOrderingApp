@@ -1,0 +1,304 @@
+/* body */
+
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    background-color: #f5f5f5;
+}
+
+/* typography */
+
+h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2.your-order{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+h3{
+    font-weight: 400;
+    color: #8b8b8b;
+}
+
+h3.offer-details-text{
+    margin: 2px 0;
+}
+
+h3.ingredients{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+h3.total-price-text{
+    margin: 0;
+}
+
+h4{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+
+p.strapline{
+    font-size: 24px;
+    margin: 0;
+}
+
+/* layout */
+
+.container {
+    width: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+header{
+    height: 167px;
+    background-image: url("Images/jimmysDiner.png");
+    background-size: cover;
+    color: white;
+    padding-top: 36px;
+    padding-left: 46px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.menu-section{
+    width: 508px;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+.item-outer{
+    padding: 34px 0 34px 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.item, 
+.add-item-container, 
+.order-item-container, 
+.order-item, 
+.total-container,
+.order-item-price-container{
+    display: flex;
+    align-items: center;
+}
+
+.order-item-price-container{
+    width: 100px;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.item-img{
+    height: 80px;
+    margin-right: 20px;
+}
+
+.order-section{
+    position: sticky;
+    bottom: 0;
+}
+
+.order {
+    padding-top: 15px;
+    padding-left: 46px;
+    padding-right: 46px;
+    margin: 0;
+    background-color: #ECFDF5;
+}
+
+.order-outer{
+    padding-bottom: 12px;
+    border-bottom: 2px solid #393333;
+    margin-bottom: 15px;
+}
+
+.order-item-container{
+    justify-content: space-between;
+    padding: 0;
+}
+
+.order-item{
+    justify-content: center;
+    margin: 0;
+}
+
+.order-item-name, .remove, .count, .order-item-price, .total-price-text, .total-price{
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.message-container{
+    height: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.message-container h3{
+    margin: 0;
+    border: 0;
+}
+
+.total-container{
+    justify-content: space-between;
+    padding: 0;
+    margin: 6px 0;
+}
+
+/* form */
+
+.payment-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 524px;
+    height: 542px;
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 1px #000;
+    text-align: center;
+    padding: 44px 24px 14px 24px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.form-heading{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 434px;
+    margin-top: 44px;
+}
+
+input{
+    width: 100%;
+    font-size: 20px;
+    padding: 22px 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* order confirmation */
+
+.order-confirmation{
+    background-color: #ECFDF5;
+    padding: 20px 0 40px 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+/* buttons */
+
+.add-item-container{
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    border: 1px solid #d2d2d2;
+    padding: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.add-item-container:hover,
+.add-item-container:focus{
+    cursor: pointer;
+    background-color:#f5f5f5;
+}
+
+.add-item-container:active{
+    background-color: #f8f8f8;
+}
+
+
+h3.remove{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin: 0 0 0 10px;
+}
+
+h3.remove:hover,
+h3.remove:focus{
+    cursor: pointer;
+    color: #555;
+}
+
+h3.remove:active{
+    color:#ccc;
+}
+
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    background-color: #16DB99;
+    color: #fff;
+    
+    
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    margin: 46px 0;
+} 
+
+.submit-order-btn{
+    font-size: 16px;
+    padding: 21px 0;
+    margin: 6px 0 16px 0;
+}
+
+.form-submit-btn{
+    display: inline-block;
+    font-size: 20px;
+    padding: 24px 0;
+    margin-top: 20px;
+}
+
+button:hover, 
+button:focus{
+    cursor: pointer;
+    background: linear-gradient(#1DD396, #16DB99);
+}
+
+button:active{
+    background: linear-gradient(#16DB99, #1DD396);
+}
+
+/* utility classes */
+
+.hidden{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+
+
+
